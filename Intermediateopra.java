@@ -11,8 +11,7 @@ public class Intermediateopra {
  List<Integer> a=Arrays.asList(1,2,3,45,6);
  a.stream().map(num -> num * 2).forEach(System.out::println); 
  a.stream().limit(5).forEach(System.out::println);
-  
- List country = Stream.of(Arrays.asList("Colombia", "Finland"), Arrays.asList("Peru","Greece", "Iceland")).flatMap(List::stream) .collect(Collectors.toList());  
+  List country = Stream.of(Arrays.asList("Colombia", "Finland"), Arrays.asList("Peru","Greece", "Iceland")).flatMap(List::stream) .collect(Collectors.toList());  
        System.out.println(country);
 
 
